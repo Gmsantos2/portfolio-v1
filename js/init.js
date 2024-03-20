@@ -23,7 +23,72 @@
 	 }, 100);
 
 
-/*----------------------------------------------------*/
+
+
+
+/* MultiLanguage ------------------------------------------------------
+const flagsElement = document.getElementById('flags');
+*/
+
+const miCheckbox = document.getElementById('miCheckbox');
+
+
+const textsToChange = document.querySelectorAll('[data-section]')
+
+const changeLanguage = async (language) => {
+   const requestJson = await fetch(`./languages/${language}.json`);
+   const texts = await requestJson.json();
+   
+   for(const textToChange of textsToChange){
+      const section = textToChange.dataset.section
+      const value = textToChange.dataset.value
+      textToChange.innerHTML = texts[section][value]
+      
+   }
+
+}
+
+miCheckbox.addEventListener('change', function() {
+   if (this.checked) {
+     // Acciones cuando el checkbox está marcado
+     changeLanguage('en')
+   } else {
+     // Acciones cuando el checkbox está desmarcado
+     changeLanguage('es')
+   }
+ });
+
+
+// flagsElement.addEventListener('click', e => {
+//    changeLanguage(e.target.parentElement.dataset.language)
+//    //changeLanguage(e.target.parentElement.dataset.language)
+//    //console.log(e.target.innerHTML.toLowerCase())
+// })
+
+/* LightMode ------------------------------------------------------
+*/
+
+const lightMode = document.getElementById('lightmode');
+lightMode.addEventListener('click', () => {
+   document.body.classList.toggle('light')
+})
+
+const miImagen1 = document.getElementById('miImagen1');
+const miImagen2 = document.getElementById('miImagen2');
+
+function cambiarSrc() {
+   if (lightMode.checked) {
+     miImagen1.src = 'images/icons/light/mdi_github.svg'; // Cambia el src cuando el checkbox está marcado
+     miImagen2.src = 'images/icons/light/mdi_linkedin.svg';
+   } else {
+     miImagen1.src = 'images/icons/mdi_github.svg'; // Restaura el src cuando el checkbox está desmarcado
+     miImagen2.src = 'images/icons/mdi_linkedin.svg';
+   }
+ }
+
+// Agrega un evento de escucha para detectar cambios en el estado del checkbox
+lightMode.addEventListener('change', cambiarSrc);
+
 /* Smooth Scrolling
 ------------------------------------------------------ */
 

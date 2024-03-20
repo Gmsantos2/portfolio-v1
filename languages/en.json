@@ -1,0 +1,53 @@
+{
+    "nav":{
+        "home": "Home",
+        "about": "About me",
+        "resume": "Resume",
+        "projects": "Projects",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+    },
+    "profile":{
+        "prename": "Hi! My name is <span> Gerson Santos Salazar </span>",
+        "name": "Gerson Santos Salazar",
+        "rol": "I'm a software engineer.",
+        "text1": "I like to transform problems into <span> software solutions.</span> My current strength is <span>web development. </span>",
+        "but": "<a class='smoothscroll' href='#about'> Let's start </a>"
+    },
+    "about-me": {
+        "title": "About me",
+        "description": "Hello! My name is Gerson Santos, and I started in the world of technology a few years ago, my first steps were at the <span>Particular Technical University of Loja.</span> Most of my learning it was thanks to the Computer Systems and Computing degree which I completed in November 2023. During the course of my learning, the taste for web development was born in me. I am very curious, which has led me to delve deeper into this world of development and thanks to this I can learn a lot",
+        "download": " <i class='fa fa-download'></i>Download CV"
+    },
+    "resume-section": {
+        "titleResume1": "Education",
+        "postTitleEducation1": "Full Stack Developer <span>&bull;</span> <em class='date'>Sept 2023</em>",
+        "postTitleEducation2" :"Systems and Computer Engineer<span>&bull;</span> <em class='date'>Oct 2017</em>",
+        "descriptionEducation1": "I am taking the Full Stack Developer bootcamp that Academlo has given me, where I have learned a lot and have acquired knowledge regarding languages ​​such as Javascript, SQL and technologies such as ReactJs, Tailwindcss, Node Js, Git and Github. I am currently in the backend module and I continue with the same enthusiasm with which I started the program.",
+        "titleEducation2": "Particular Technical University of Loja",
+        "descriptionEducation2": "I have completed my university studies at the Private Technical University of Loja. And I received the title of Engineer in Information Systems and Computing, where I have taken my first steps in programming and software development.",
+        "titleResume2": "Skills",
+        "descriptionTitle2": "My skills have been polished since I started studying at university, I always try to learn new things. The technologies I use are the following:"
+    },
+    "project-section": {
+        "title": "THESE ARE SOME OF MY PROJECTS.",
+        "descriptionProject1": "It is an application that allows users to create and share playlists with other people using the Spotify API.",
+        "descriptionProject2": "This project aims to offer detailed information about Pokémon, their abilities, types, moves, and more through a public API.",
+        "descriptionProject3": "It is an application that allows users to view Rick and Morty characters from different episodes through a public API.",
+        "but": "See more..."
+    },
+    "testimonials-section": {
+        "title1": "Everything seems impossible until it is done.",
+        "title2": "If you are afraid of failing, you will probably fail."
+    },
+    "contact-section": {
+        "title": "Thank you for visiting my portfolio. I'm excited to connect with you. If you have questions, collaboration opportunities, or just want to chat about interesting projects, I'd be happy to hear from you!",
+        "title2": "Contact details",
+        "input1": "Name <span class='required'>*</span>",
+        "input2": "Email <span class='required'>*</span>",
+        "input3": "Subject <span class='required'>*</span>",
+        "input4": "Message <span class='required'>*</span>",
+        "but": "Send"
+
+    }
+}

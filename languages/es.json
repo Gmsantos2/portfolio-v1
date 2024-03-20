@@ -1,0 +1,54 @@
+{
+    "nav":{
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "resume": "Resumen",
+        "projects": "Proyectos",
+        "testimonials": "Testimonios",
+        "contact": "Contacto"
+
+    },
+    "profile":{
+        "prename": "Hola! Mi nombre es <span> Gerson Santos Salazar </span>",
+        "name": "Gerson Santos Salazar",
+        "rol": "Soy Ingeniero de software.",
+        "text1": "Me gusta transformar los problemas en <span> soluciones de software.</span> Mi fuerte actualmente es el <span>desarrollo web. </span> ",
+        "but": "<a class='smoothscroll' href='#about'>Empecemos </a>"
+    },
+    "about-me": {
+        "title": "Sobre mí",
+        "description": "Hola! Mi nombre es Gerson Santos, y empecé en el mundo de la tecnología hace algunos años, mis primeros pasos fueron en la <span>Universidad Técnica Particular de Loja.</span> La mayor parte de mi aprendizaje fue gracias a la carrera de Sistemas Informáticos y Computación la cuál culminé en Noviembre del año 2023. En el trancurso de mi aprendizaje me nació el gusto del desarrollo web. Soy muy curioso, lo cual me ha llevado a profundizar en este mundo del desarrollo y gracias a ello puedo aprender mucho.",
+        "download": "<i class='fa fa-download'></i>Descargar CV"
+    },
+    "resume-section": {
+        "titleResume1": "Educación",
+        "postTitleEducation1": "Desarrollador Full Stack <span>&bull;</span> <em class='date'>Sept 2023</em>",
+        "descriptionEducation1": "Me encuentro cursando el bootcamp de Desarrollador Full Stack que me ha proporcionado Academlo, en donde he aprendido mucho y he adquirido conocimiento referente a lenguajes como javascript, SQL y tecnologías como ReactJs, Tailwindcss, Node Js, Git y Github. Actualmente me encuentro en el módulo de backend y sigo con el mismo entuciasmo con el que empecé el programa.",
+        "titleEducation2": "Universidad Técnica Particular de Loja",
+        "postTitleEducation2" : "Ingeniero en Sistemas Informáticos y Computación <span>&bull;</span> <em class='date'>Oct 2017</em>",
+        "descriptionEducation2": "He culminado mis estudios universitarios en la Universidad Técnica Particular de Loja. Y recibido el título de Ingeniero en Sistemas Informáticos y Computación, en donde he dado mis primeros pasos dentro de la programación y el desarrollo de software.",
+        "titleResume2": "Habilidades",
+        "descriptionTitle2": "Mis habilidades se han ido puliendo desde que empecé a estudiar en la universidad, siempre intento aprender cosas nuevas. Las tecnologías que manejo son las siguientes:"
+    },
+    "project-section": {
+        "title": "ESTOS SON ALGUNOS DE MIS PROYECTOS.",
+        "descriptionProject1": "Es una aplicación que permite a los usuarios crear y compartir listas de reproducción a otras personas haciendo uso de la API de spotify.",
+        "descriptionProject2": "Este proyecto tiene como objetivo ofrecer información detallada sobre los Pokémon, sus habilidades, tipos, movimientos, y más a través de una API pública.",
+        "descriptionProject3": "Es una aplicación que permite a los usuarios visualizar los personajes de Rick and Morty de diferentes episodios a traves de una API pública.",
+        "but": "Ver más..."
+    },
+    "testimonials-section": {
+        "title1": "Todo parece imposible hasta que se hace.",
+        "title2": "Si tienes miedo de fallar, probablemente falles."
+    },
+    "contact-section": {
+        "title": "Gracias por visitar mi portafolio. Estoy emocionado/a de conectar contigo. Si tienes preguntas, oportunidades de colaboración o simplemente deseas charlar sobre proyectos interesantes, ¡estaré encantado/a de escucharte!",
+        "title2": "Detalles de contacto",
+        "input1": "Nombre <span class='required'>*</span>",
+        "input2": "Correo <span class='required'>*</span>",
+        "input3": "Asunto <span class='required'>*</span>",
+        "input4": "Mensaje <span class='required'>*</span>",
+        "but": "Enviar"
+    
+    }
+}

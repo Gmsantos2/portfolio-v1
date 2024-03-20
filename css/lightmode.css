@@ -1,0 +1,263 @@
+body.light header,
+body.light #resume,
+body.light #about,
+body.light #portfolio,
+body.light #contact {
+    background: #FFFFFF;
+}
+
+body.light ul#nav li a {
+
+    color: #333333;
+}
+
+body.light ul#nav {
+    background: #FFFFFF;
+}
+
+body.light ul#nav li a:active {
+    background-color: #F5F5F5 !important;
+}
+
+body.light .opaque {
+    background: #FFFFFF;
+}
+
+body.light ul#nav li.current a {
+    background-color: #757575;
+    color: #333333;
+}
+
+body.light header .banner-text h1,
+body.light header .banner-text h2,
+body.light header .banner-text h3,
+body.light header .banner-text hr,
+body.light header .banner-text span {
+    color: #333333;
+
+}
+
+body.light button {
+    background: #757575;
+}
+
+body.light button:hover {
+    background: #E0E0E0;
+    color: #333333;
+}
+
+body.light a:visited {
+    color: #FFFFFF;
+}
+
+
+body.light #about p,
+body.light #about h2,
+body.light #about span {
+    color: #333333;
+}
+
+
+
+body.light #resume span,
+body.light #resume h3,
+body.light #resume p.info {
+    color: #333333;
+}
+
+
+body.light #resume p {
+    color: #757575;
+}
+
+body.light #about .download .button {
+    background: #757575;
+}
+
+body.light .elemento-skill {
+    border-radius: 5px;
+    border: 1px solid #2196F3;
+    box-shadow: none;
+
+}
+
+body.light #portfolio h1 {
+    color: #333333;
+}
+
+body.light #portfolio .bg__image {
+    background-color: #757575;
+}
+
+body.light #portfolio .bg__info {
+    background-color: #CCCCCC;
+}
+
+body.light #portfolio .bg__info span,
+body.light #portfolio .bg__info a {
+    color: #333333;
+}
+
+body.light #portfolio .bg__info p {
+    color: #15161e;
+}
+
+body.light #portfolio ul li {
+    background-color: #FFC107;
+    color: #15161e;
+    font-weight: bold;
+}
+
+body.light #portfolio img {
+    box-shadow: none;
+}
+
+
+
+.image__container {
+    position: relative;
+}
+
+.bg__image img {
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+}
+
+#portfolio .image__container:hover img {
+    transform: scale(1.1);
+}
+
+.__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo oscuro con opacidad */
+    opacity: 0;
+    /* Inicialmente invisible */
+    transition: opacity 0.3s ease;
+    /* Transición suave */
+}
+
+#portfolio .image__container:hover .__overlay {
+    transform: scale(1.1);
+}
+
+.image__container:hover .__overlay {
+    opacity: 1;
+    /* Hace visible el overlay al hacer hover */
+}
+
+.__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .__overlay p {
+    font-weight: bold;
+}
+
+body.light #portfolio .bg__info a:hover {
+    color: #2196F3;
+}
+
+body.light #testimonials,
+body.light footer {
+    background-image: none;
+    background: #C9D6FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+
+body.light #testimonials h1::before {
+    color: #333333;
+}
+
+body.light #testimonials blockquote p {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+    color: #333333;
+}
+
+
+body.light #testimonials blockquote cite {
+    text-shadow: none;
+    color: #333333;
+
+}
+
+body.light #testimonials .flex-control-paging li a {
+    background: #757575;
+}
+
+
+body.light #testimonials .flex-control-paging li a.flex-active{
+    background: #333333;
+    
+}
+
+body.light #contact p,
+body.light #contact label,
+body.light #contact h1::before,
+body.light #contact h2{
+    color: #333333;
+}
+
+body.light #contact input,
+body.light #contact textarea {
+    background: #CCCCCC;
+}
+
+body.light #contact button {
+    background: #2196F3;
+    color: #fafafa;
+}
+
+body.light #contact button:hover {
+    background: #E0E0E0;
+    color: #333333;
+}
+
+body.light footer li {
+    color: #333333;
+}
+
+body.light #go-top a {
+    background: #2196F3 ;
+}
+
+body.light #go-top a:hover {
+    background-color: #d1daf6 ;
+ }
+
+ @media only screen and (max-width: 767px) {
+   body.light #nav-wrap:target > ul#nav {
+        background: #2196F3 ;
+    }
+
+    body.light ul#nav li a {
+        color: #CCCCCC;
+    }
+
+    body.light ul#nav li.current a{
+        background: #757575 ;
+        color: #CCCCCC;
+    }
+
+    body.light #nav-wrap > a {
+        background-color: #2196F3;
+    }
+ }
+

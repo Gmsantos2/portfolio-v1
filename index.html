@@ -21,6 +21,7 @@
     ================================================== -->
    <link rel="stylesheet" href="css/default.css">
    <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/lightmode.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,32 +49,69 @@
          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Inicio</a></li>
-            <li><a class="smoothscroll" href="#about">Sobre mí</a></li>
-            <li><a class="smoothscroll" href="#resume">Resumen</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Proyectos</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonios</a></li>
-            <li><a class="smoothscroll" href="#contact">Contacto</a></li>
+            <li class="current"><a data-section="nav" data-value="home" class="smoothscroll" href="#home">Inicio</a>
+            </li>
+            <li><a data-section="nav" data-value="about" class="smoothscroll" href="#about">Sobre mí</a></li>
+            <li><a data-section="nav" data-value="resume" class="smoothscroll" href="#resume">Resumen</a></li>
+            <li><a data-section="nav" data-value="projects" class="smoothscroll" href="#portfolio">Proyectos</a></li>
+            <li><a data-section="nav" data-value="testimonials" class="smoothscroll"
+                  href="#testimonials">Testimonios</a></li>
+            <li><a data-section="nav" data-value="contact" class="smoothscroll" href="#contact">Contacto</a></li>
+           <!-- <li>
+               <div style="display: flex; gap: 8px;" class="flags" id="flags">
+                   <div class="flag__item" data-language="es">
+                     <h3>Es</h3>
+                  </div>
+                  <div class="flag__item" data-language="en">
+                     <h3>En</h3>
+                  </div> 
+               </div>
+            </li> -->
+            
+            <li>
+               <div class="switches">
+                  <label class="switch">
+                     <!-- cuando este check el data language va a ser "en" -->
+                     <input id="miCheckbox" type="checkbox" class="toggle flag__item">
+                     <span class="slider"></span>
+                     <span class="card-side"></span>
+                   </label>  
+               
+                  <label class="ui-switch">
+                     <input id="lightmode" type="checkbox">
+                     <div class="slider-l">
+                       <div class="circle"></div>
+                     </div>
+                   </label>
+               </div>
+               
+            </li>   
+         
+
          </ul> <!-- end #nav -->
 
       </nav> <!-- end #nav-wrap -->
 
+
+
       <div class="row banner">
          <div class="banner-text">
-            <h2>Hola! Mi nombre es <span>Gerson Santos Salazar</span> </h2>
-            <h1 class="responsive-headline">Soy Ingeniero de Software.</h1>
-            <h3>Me gusta transformar los problemas en <span> soluciones de software.</span> Mi fuerte actualmente es el
+            <h2 data-section="profile" data-value="prename"> Hola! Mi nombre es <span data-section="profile"
+                  data-value="name">Gerson Santos Salazar</span></h2>
+            <h1 class="responsive-headline" data-section="profile" data-value="rol">Soy Ingeniero de software.</h1>
+            <h3 data-section="profile" data-value="text1">Me gusta transformar los problemas en <span> soluciones de
+                  software.</span> Mi fuerte actualmente es el
                <span>desarrollo web. </span>
             </h3>
             <hr />
-            <button><a class="smoothscroll" href="#about">Empecemos</button>
-            <ul class="social">
-              
-               <li><a href="https://github.com/Gmsantos2"><img class="svg-container" src="images/icons/mdi_github.svg" alt=""></a></li>
-               <li><a href="https://www.instagram.com/gersexy99/"><img class="svg-container" src="images/icons/mdi_instagram.svg" alt=""></a></li>
-               <li><a href="https://www.linkedin.com/in/gerson-santos-salazar-0ab881197/"><img class="svg-container" src="images/icons/mdi_linkedin.svg" alt=""></a></li>
-               <li><a href="#"><img class="svg-container" src="images/icons/ic_baseline-discord.svg" alt=""></a></li>
-            </ul>
+            <button data-section="profile" data-value="but"><a class="smoothscroll" href="#about">Empecemos </a></button>
+               <ul class="social">
+
+                  <li><a href="https://github.com/Gmsantos2"><img class="svg-container" src="images/icons/mdi_github.svg"
+                           alt="" id="miImagen1"></a></li>
+                  <li><a href="https://www.linkedin.com/in/gerson-santos-salazar-0ab881197/"><img  class="svg-container"
+                           src="images/icons/mdi_linkedin.svg" alt="" id="miImagen2"></a></li>
+               </ul>
          </div>
       </div>
 
@@ -100,9 +138,10 @@
 
          <div class="nine columns main-col">
 
-            <h2>Sobre mí</h2>
+            <h2 data-section="about-me" data-value="title">Sobre mí</h2>
 
-            <p>Hola! Mi nombre es Gerson Santos, y empecé en el mundo de la tecnología hace algunos años, mis primeros
+            <p data-section="about-me" data-value="description">Hola! Mi nombre es Gerson Santos, y empecé en el mundo
+               de la tecnología hace algunos años, mis primeros
                pasos fueron en la <span>Universidad Técnica Particular de Loja.</span> La mayor parte de mi aprendizaje
                fue gracias a la carrera de Sistemas Informáticos y Computación la cuál culminé en Noviembre del año
                2023. En el trancurso de mi aprendizaje me nació el gusto del desarrollo web.
@@ -112,23 +151,12 @@
 
             <div class="row">
 
-               <div class="columns contact-details">
 
-                  <h2>Detalles de contacto</h2>
-                  <p class="address">
-                     <span>Gerson Santos Salazar</span><br>
-                     <span>Loja<br>
-                        Ecuador
-                     </span><br>
-                     <span>+593 99 792 9306</span><br>
-                     <span>gersantos1234@gmail.com</span>
-                  </p>
-
-               </div>
 
                <div class="columns download">
                   <p>
-                     <a href="/files/CV_Gerson_Santos.pdf" download="CV_Gerson_Santos" class="button"><i class="fa fa-download"></i>Descargar CV</a>
+                     <a data-section="about-me" data-value="download" href="/files/CV_Gerson_Santos.pdf"
+                        download="CV_Gerson_Santos" class="button"><i class="fa fa-download"></i>Descargar CV</a>
                   </p>
                </div>
 
@@ -150,7 +178,7 @@
       <div class="row education">
 
          <div class="three columns header-col">
-            <h1><span>Educación</span></h1>
+            <h1><span data-section="resume-section" data-value="titleResume1">Educación</span></h1>
          </div>
 
          <div class="nine columns main-col">
@@ -160,11 +188,15 @@
                <div class="twelve columns">
 
                   <h3>Academlo</h3>
-                  <p class="info">Desarrollador Full Stack <span>&bull;</span> <em class="date">Septiembre 2023</em></p>
+                  <p data-section="resume-section" data-value="postTitleEducation1" class="info">Desarrollador Full
+                     Stack <span>&bull;</span> <em class="date">Sept 2023</em></p>
 
-                  <p>
-                     Me encuentro cursando el bootcamp de Desarrollador Full Stack que me ha proporcionado Academlo, en donde he aprendido mucho y he adquirido conocimiento referente 
-                     a lenguajes como javascript, SQL y tecnologías como ReactJs, Tailwindcss, Node Js, Git y Github. Actualmente me encuentro en el módulo de backend y sigo con el mismo entuciasmo con el que empecé el programa.
+                  <p data-section="resume-section" data-value="descriptionEducation1">
+                     Me encuentro cursando el bootcamp de Desarrollador Full Stack que me ha proporcionado Academlo, en
+                     donde he aprendido mucho y he adquirido conocimiento referente
+                     a lenguajes como javascript, SQL y tecnologías como ReactJs, Tailwindcss, Node Js, Git y Github.
+                     Actualmente me encuentro en el módulo de backend y sigo con el mismo entuciasmo con el que empecé
+                     el programa.
                   </p>
 
                </div>
@@ -175,12 +207,14 @@
 
                <div class="twelve columns">
 
-                  <h3>Universidad Técnica Particular de Loja</h3>
-                  <p class="info">Ingeniero en sistemas informáticos y Computación <span>&bull;</span> <em class="date">Octubre 2017</em></p>
+                  <h3 data-section="resume-section" data-value="titleEducation2">Universidad Técnica Particular de Loja
+                  </h3>
+                  <p data-section="resume-section" data-value="postTitleEducation2" class="info">Ingeniero en Sistemas
+                     Informáticos y Computación <span>&bull;</span> <em class="date">Oct 2017</em></p>
 
-                  <p>
+                  <p data-section="resume-section" data-value="descriptionEducation2">
                      He culminado mis estudios universitarios en la Universidad Técnica Particular de Loja.
-                     Y recibido el título de Ingeniero en Sistemas Informáticos y Computación, en donde he 
+                     Y recibido el título de Ingeniero en Sistemas Informáticos y Computación, en donde he
                      dado mis primeros pasos dentro de la programación y el desarrollo de software.
                   </p>
 
@@ -193,97 +227,19 @@
       </div> <!-- End Education -->
 
 
-      <!-- Experience
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Experiencia</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>UTPL</h3>
-                  <p class="info">Pasante Area Biológica <span>&bull;</span> <em class="date">Marzo 2023 - Julio 2023</em></p>
-
-                  <p>
-                     Trabajé como pasante de informática en oficinas de área biológica de la UTPL (edificio 9) 
-                     en actividades de ayuda en procesos de plataforma para el docente del área de medicina.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Laboratorio de innovación e investigación docente UTPL</h3>
-                  <p class="info">Practicante Backend <span>&bull;</span> <em class="date">Abril 2021 - Agosto 2021</em></p>
-
-                  <p>
-                     Trabajo en proyecto del laboratorio de innovación e investigación docente como 
-                     backend en el sistema de Soporte Tecnológico Educativo de Simulación de Administración de 
-                     Justicia para los estudiantes de derecho de la UTPL.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  
-                  <p class="info">Practicante Frontend <span>&bull;</span> <em class="date">Abril 2020 - Agosto 2020</em></p>
-
-                  <p>
-                     Trabajo en proyecto del laboratorio de innovación e investigación docente como 
-                     frontend en el Sistema de Gestión para Administración del Sitio Web Ascendere.
-                  </p>
-
-               </div>
-
-            </div>
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Ediloja</h3>
-                  <p class="info">Virtualizador <span>&bull;</span> <em class="date">Febrero 2020 - Abril 2020 | Agosto 2019 - Octubre 2019 </em> </p>
-
-                  <p>
-                     Trabajo de virtualizador de cursos en la plataforma virtual CANVAS UTPL, de la modalidad a distancia. 
-                     Validador de cursos CANVAS UTPL modalidad distancia.
-
-                  </p>
-
-               </div>
-
-            </div>
-            
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
       <!-- Skills
       ----------------------------------------------- -->
       <div class="row skill">
 
          <div class="three columns header-col">
-            <h1><span>Habilidades</span></h1>
+            <h1><span data-section="resume-section" data-value="titleResume2">Habilidades</span></h1>
          </div>
 
          <div class="nine columns main-col">
 
-            <p>Mis habilidades se han ido puliendo desde que empecé a estudiar en la universidad, siempre intento aprender cosas nuevas. Las tecnologías que manejo son las siguientes: </p>
+            <p data-section="resume-section" data-value="descriptionTitle2">Mis habilidades se han ido puliendo desde
+               que empecé a estudiar en la universidad, siempre intento aprender cosas nuevas. Las tecnologías que
+               manejo son las siguientes: </p>
             </p>
 
             <div class="content-skills">
@@ -340,55 +296,82 @@
    ================================================== -->
    <section id="portfolio">
 
-      <h1>Estos son algunos de mis proyectos.</h1>
-      <div class="container__projects">
-         <div class="bg__image ">
-            <div class="image__container">
-               <img src="/images/portfolio/giftmusic.png" alt="">
+      <h1 data-section="project-section" data-value="title">Estos son algunos de mis proyectos.</h1>
+      <div class="nine container__ListProjects">
+         <div class="container__projects">
+            <div class="bg__image ">
+               <div class="image__container">
+                  <img src="/images/portfolio/giftmusic.png" alt="">
+                  <div class="__overlay"><a href="https://entregable6-jlkq.vercel.app/"> <p>Ver más...</p></a></div>
+               </div>
+            </div>
+            <div class="bg__info ">
+               <div class="text__info">
+                  <span>Gift Music</span>
+                  <p data-section="project-section" data-value="descriptionProject1">Es una aplicación que permite a los usuarios crear y compartir
+                     listas de reproducción a otras personas haciendo uso de la API de spotify.</p>
+               </div>
+               <div class="__list">
+                  <ul>
+                     <li><img class="svg__container" src="/images/icons/react.svg" alt=""></img>React</li>
+                     <li><img class="svg__container" src="/images/icons/tailwind.svg" alt=""></img>Taildwindcss</li>
+                     <li><img class="svg__container" src="/images/icons/tailwind.svg" alt=""></img>Redux</li>
+                  </ul>
+               </div>
+               <div class="__repo">
+                  <a  href="https://github.com/EstebanMartinez09/entregable6">Repo Github</a>
+               </div>
             </div>
          </div>
-         <div class="bg__info ">
-            <div class="text__info">
-               <span>Gift Music</span>
-               <p>Es una aplicación que permite a los usuarios crear y compartir 
-                  listas de reproducción a otras personas haciendo uso de la API de spotify.</p>
+         <div class="container__projects">
+            <div class="bg__image ">
+               <div class="image__container">
+                  <img src="/images/portfolio/pokedex1.png" alt="">
+                  <div class="__overlay"><a href="https://entregable5-henna.vercel.app/"> <p>Ver más...</p></a></div>
+               </div>
             </div>
-            <div class="__list">
-               <ul>
-                  <li><img class="svg__container" src="/images/icons/react.svg" alt=""></img>React</li>
-                  <li><img class="svg__container" src="/images/icons/tailwind.svg" alt=""></img>Taildwindcss</li>
-                  <li><img class="svg__container" src="/images/icons/tailwind.svg" alt=""></img>Redux</li>
-               </ul>
+            <div class="bg__info ">
+               <div class="text__info">
+                  <span>PokeAPI</span>
+                  <p data-section="project-section" data-value="descriptionProject2">Este proyecto tiene como objetivo ofrecer información detallada sobre los Pokémon, sus habilidades,
+                     tipos, movimientos, y más a través de
+                     una API pública.</p>
+               </div>
+               <div class="__list">
+                  <ul>
+                     <li><img class="svg__container" src="/images/icons/react.svg" alt=""></img>React</li>
+                     <li><img class="svg__container" src="/images/icons/tailwind.svg" alt=""></img>Taildwindcss</li>
+                  </ul>
+               </div>
+               <div class="__repo">
+                  <a  href="https://github.com/Gmsantos2/entregable5">Repo Github</a>
+               </div>
             </div>
-            <div>
-               <a href="#">Ver más...</a>
+         </div>
+         <div class="container__projects">
+            <div class="bg__image ">
+               <div class="image__container">
+                  <img src="/images/portfolio/RickMorty.png" alt="">
+                  <div class="__overlay"><a href="https://entregable3-delta.vercel.app/"> <p>Ver más...</p></a></div>
+               </div>
+            </div>
+            <div class="bg__info ">
+               <div class="text__info">
+                  <span>Rick and Morty App</span>
+                  <p data-section="project-section" data-value="descriptionProject3">Es una aplicación que permite a los usuarios visualizar los personajes de Rick and Morty de diferentes episodios a traves de una API pública.</p>
+               </div>
+               <div class="__list">
+                  <ul>
+                     <li><img class="svg__container" src="/images/icons/react.svg" alt=""></img>React</li>
+                     <li><img class="svg__container" src="/images/icons/tailwind.svg" alt=""></img>Taildwindcss</li>
+                  </ul>
+               </div>
+               <div class="__repo">
+                  <a href="https://github.com/Gmsantos2/entregable3">Repo Github</a>
+               </div>
             </div>
          </div>
       </div>
-      <div class="container__projects">
-         <div class="bg__info__invert ">
-            <div class="text__info">
-               <span>PokeAPI</span>
-               <p>Este proyecto tiene como objetivo ofrecer información detallada sobre los Pokémon, sus habilidades, tipos, movimientos, y más a través de 
-                  una API pública.</p>
-            </div>
-            <div class="__list">
-               <ul>
-                  <li><img class="svg__container" src="/images/icons/react.svg" alt=""></img>React</li>
-                  <li><img class="svg__container" src="/images/icons/tailwind.svg" alt=""></img>Taildwindcss</li>
-               </ul>
-            </div>
-            <div>
-               <a href="#">Ver más...</a>
-            </div>
-         </div>
-         <div class="bg__image__invert ">
-            <div class="image__container">
-               <img src="/images/portfolio/pokedex1.png" alt="">
-            </div>
-         </div>
-      </div>
-
    </section> <!-- Portfolio Section End-->
 
 
@@ -406,7 +389,7 @@
 
             <div class="two columns header-col">
 
-               <h1><span>Client Testimonials</span></h1>
+               <h1><span></span></h1>
 
             </div>
 
@@ -418,7 +401,7 @@
 
                      <li>
                         <blockquote>
-                           <p>Todo parece imposible hasta que se hace.
+                           <p data-section="testimonials-section" data-value="title1">Todo parece imposible hasta que se hace.
                            </p>
                            <cite>Nelson Mandela</cite>
                         </blockquote>
@@ -426,7 +409,7 @@
 
                      <li>
                         <blockquote>
-                           <p>Si tienes miedo de fallar, probablemente falles.
+                           <p data-section="testimonials-section" data-value="title2">Si tienes miedo de fallar, probablemente falles.
                            </p>
                            <cite>Kobe Bryant</cite>
                         </blockquote>
@@ -459,9 +442,10 @@
 
          <div class="eight columns">
 
-            <p class="lead">
-               Gracias por visitar mi portafolio. Estoy emocionado/a de conectar contigo. 
-               Si tienes preguntas, oportunidades de colaboración o simplemente deseas charlar sobre proyectos interesantes, 
+            <p data-section="contact-section" data-value="title" class="lead">
+               Gracias por visitar mi portafolio. Estoy emocionado/a de conectar contigo.
+               Si tienes preguntas, oportunidades de colaboración o simplemente deseas charlar sobre proyectos
+               interesantes,
                ¡estaré encantado/a de escucharte!
             </p>
 
@@ -471,34 +455,34 @@
 
       <div class="row container__contact">
 
-         <div class="eight columns">
+         <div class="seven columns">
 
             <!-- form -->
             <form action=" " method="post" id="contactForm" name="contactForm">
                <fieldset>
 
                   <div>
-                     <label for="contactName">Nombre <span class="required">*</span></label>
+                     <label data-section="contact-section" data-value="input1" for="contactName">Nombre <span class="required">*</span></label>
                      <input type="text" value="" size="35" id="contactName" name="contactName">
                   </div>
 
                   <div>
-                     <label for="contactEmail">Correo <span class="required">*</span></label>
+                     <label data-section="contact-section" data-value="input2" for="contactEmail">Correo <span class="required">*</span></label>
                      <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
                   </div>
 
                   <div>
-                     <label for="contactSubject">Asunto</label>
+                     <label data-section="contact-section" data-value="input3" for="contactSubject">Asunto <span class="required">*</span></label>
                      <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
                   </div>
 
                   <div>
-                     <label for="contactMessage">Mensaje <span class="required">*</span></label>
+                     <label data-section="contact-section" data-value="input4" for="contactMessage">Mensaje <span class="required">*</span></label>
                      <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
                   </div>
 
                   <div>
-                     <button class="submit">Enviar</button>
+                     <button data-section="contact-section" data-value="but" class="submit">Enviar</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
@@ -514,7 +498,21 @@
                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
             </div>
 
-         </div>  
+         </div>
+
+         <div class="detalles four columns">
+
+            <h2 data-section="contact-section" data-value="title2">Detalles de contacto</h2>
+            <p class="address">
+               <span>Gerson Santos Salazar</span><br>
+               <span>Loja -
+                  Ecuador
+               </span><br>
+               <span>+593 99 792 9306</span><br>
+               <span>gersantos1234@gmail.com</span>
+            </p>
+
+         </div>
 
       </div>
 
@@ -535,7 +533,8 @@
 
          </div>
 
-         <div id="go-top"><a class="smoothscroll" title="Inicio" href="#home"><img src="images/icons/arrow-up-double-fill.svg" alt=""></a>
+         <div id="go-top"><a class="smoothscroll" title="Inicio" href="#home"><img
+                  src="images/icons/arrow-up-double-fill.svg" alt=""></a>
          </div>
 
       </div>
@@ -546,7 +545,7 @@
    ================================================== -->
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   
+
 
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
